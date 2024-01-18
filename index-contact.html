@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>MaxGraph New Site</title>
+  <!-- <link rel="preload" href="fonts/AlegreyaSansBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AlegreyaSansLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/AlegreyaSansRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/InterBlack.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/InterBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/InterRegular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/InterSemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/ReggaeOne-Regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__main">
+        <div class="header__main-top">
+          <a href="index.html" class="logo header__logo">
+            <img loading="lazy" src="img/logo.png" class="image" width="200" height="50" alt="">
+          </a>
+          <a href="tel:375291234567" class="header__phone">
+            <img loading="lazy" src="img/phone_icon_header.png" class="image" width="23.95" height="24" alt="phone">
+            <p class="header__phone-link">+375 29 123 45 67</p>
+          </a>
+          <div class="header__burger">
+            <img loading="lazy" src="img/burger.svg" class="image" width="44" height="44" alt="burger">
+          </div>
+        </div>
+        <nav class="nav header__nav">
+          <ul class="list-reset nav__list">
+            <li class="nav__item header__nav-item active"><a href="index.html" class="nav__link">главная</a></li>
+            <li class="nav__item header__nav-item"><a href="index-menu.html" class="nav__link">меню</a></li>
+            <li class="nav__item header__nav-item"><a href="index-stock.html" class="nav__link">акции</a></li>
+            <li class="nav__item header__nav-item"><a href="index-contact.html" class="nav__link">контакты</a></li>
+            <li class="nav__item header__nav-item"><a href="index-franchise.html" class="nav__link">открыть франшизу</a></li>
+            <li class="nav__item header__nav-item"><a href="index-complaint.html" class="nav__link">оставить жалобу</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="social header__social">
+        <a class="social-link" href="#">
+          <img loading="lazy" src="img/instagram.svg" class="image" width="40" height="40" alt="instagram">
+        </a>
+        <a class="social-link" href="#">
+          <img loading="lazy" src="img/tiktok.svg" class="image" width="40" height="40" alt="tiktok">
+        </a>
+        <a class="social-link" href="#">
+          <img loading="lazy" src="img/vk.svg" class="image" width="40" height="40" alt="vk">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__nav-mobile--wrapper">
+    <nav class="nav header__nav header__nav-mobile">
+      <ul class="list-reset nav__list">
+        <li class="nav__item header__nav-item active"><a href="index.html" class="nav__link">главная</a></li>
+        <li class="nav__item header__nav-item"><a href="index-menu.html" class="nav__link">меню</a></li>
+        <li class="nav__item header__nav-item"><a href="index-stock.html" class="nav__link">акции</a></li>
+        <li class="nav__item header__nav-item"><a href="index-contact.html" class="nav__link">контакты</a></li>
+        <li class="nav__item header__nav-item"><a href="index-franchise.html" class="nav__link">открыть франшизу</a></li>
+        <li class="nav__item header__nav-item"><a href="index-complaint.html" class="nav__link">оставить жалобу</a></li>
+      </ul>
+      <div class="social">
+        <a class="social-link" href="#">
+          <img loading="lazy" src="img/instagram.svg" class="image" width="40" height="40" alt="instagram">
+        </a>
+        <a class="social-link" href="#">
+          <img loading="lazy" src="img/tiktok.svg" class="image" width="40" height="40" alt="tiktok">
+        </a>
+        <a class="social-link" href="#">
+          <img loading="lazy" src="img/vk.svg" class="image" width="40" height="40" alt="vk">
+        </a>
+      </div>
+      <div class="header__nav-mobile--close">
+        <img loading="lazy" src="img/close-btn.svg" class="image" width="18" height="18" alt="close">
+      </div>
+    </nav>
+  </div>
+
+</header>
+
+    <main class="main">
+      <section class="contact">
+  <div class="container">
+    <div class="contact__wrapper">
+
+      <div class="contact__main-bg">
+        <h2 class="contact__main-title">Контакты</h2>
+      </div>
+
+      <div class="map__wrapper">
+
+  <div class="map__slider">
+    <!-- 1 слайд -->
+    <div class="map__slider-item active" data-tabs-field="map__point-1">
+      <div class="swiper map__swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Суражская 1А</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Суражская 1А</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Суражская 1А</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="swiper-pagination map__swiper-pagination"></div>
+
+        <div class="map__btns-container">
+          <div class="map__btns">
+            <button class="btn-reset map__btn map__btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+            <button class="btn-reset map__btn map__btn--next" aria-label="Перейти к следующему слайду"></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 2 слайд -->
+    <div class="map__slider-item" data-tabs-field="map__point-2">
+      <div class="swiper map__swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Бобруйская, д, 6 ТЦ «Galileo», Конкорс</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Бобруйская, д, 6 ТЦ «Galileo», Конкорс</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Бобруйская, д, 6 ТЦ «Galileo», Конкорс</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- swiper-wrapper -->
+
+        <div class="swiper-pagination map__swiper-pagination"></div>
+
+        <div class="map__btns-container">
+          <div class="map__btns">
+            <button class="btn-reset map__btn map__btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+            <button class="btn-reset map__btn map__btn--next" aria-label="Перейти к следующему слайду"></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3 слайд -->
+    <div class="map__slider-item" data-tabs-field="map__point-3">
+      <div class="swiper map__swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Нововиленская, д. 41</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Нововиленская, д. 41</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Нововиленская, д. 41</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- swiper-wrapper -->
+
+        <div class="swiper-pagination map__swiper-pagination"></div>
+
+        <div class="map__btns-container">
+          <div class="map__btns">
+            <button class="btn-reset map__btn map__btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+            <button class="btn-reset map__btn map__btn--next" aria-label="Перейти к следующему слайду"></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4 слайд -->
+    <div class="map__slider-item" data-tabs-field="map__point-4">
+      <div class="swiper map__swiper">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Кальварийская, д. 7Б ТЦ «Трюм»</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Кальварийская, д. 7Б ТЦ «Трюм»</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="map__item-bg">
+              <div class="map__item-content">
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-loc.svg" class="image" width="24" height="24" alt="map-icon">
+                  <address>г. Минск, ул. Кальварийская, д. 7Б ТЦ «Трюм»</address>
+                </div>
+                <div class="map__item-content-text">
+                  <img loading="lazy" src="img/map_icon-phone.svg" class="image" width="24" height="24" alt="map-icon">
+                  <a href="tel:375291234567">+375 29 123 45 67</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- swiper-wrapper -->
+
+        <div class="swiper-pagination map__swiper-pagination"></div>
+
+        <div class="map__btns-container">
+          <div class="map__btns">
+            <button class="btn-reset map__btn map__btn--prev" aria-label="Перейти к предыдущему слайду"></button>
+            <button class="btn-reset map__btn map__btn--next" aria-label="Перейти к следующему слайду"></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- BTN -->
+  <div class="map__wrapper-img">
+    <!-- <img loading="lazy" src="img/contact-map.png" class="image img-svg" width="865" height="470" alt="map"> -->
+    <button class="btn-reset map__btn-dot active map__btn-dot-1" data-tabs-handler="map__point-1">
+      <img loading="lazy" src="img/contact-loc-full.svg" class="image" width="36" height="42" alt="location">
+    </button>
+    <button class="btn-reset map__btn-dot map__btn-dot-2" data-tabs-handler="map__point-2">
+      <img loading="lazy" src="img/map-loc.svg" class="image" width="36" height="42" alt="location">
+    </button>
+    <button class="btn-reset map__btn-dot map__btn-dot-3" data-tabs-handler="map__point-3">
+      <img loading="lazy" src="img/map-loc.svg" class="image" width="36" height="42" alt="location">
+    </button>
+    <button class="btn-reset map__btn-dot map__btn-dot-4" data-tabs-handler="map__point-4">
+      <img loading="lazy" src="img/map-loc.svg" class="image" width="36" height="42" alt="location">
+    </button>
+  </div>
+
+</div>
+
+      <div class="contact__address">
+        <div class="contact__address-item">
+          <img loading="lazy" src="img/contact-location_icon-1.svg" class="image" width="24" height="24" alt="map-icon">
+          <address>г. Минск, ул. Бобруйская, д, 6 ТЦ «Galileo», Конкорс</address>
+        </div>
+        <div class="contact__address-item">
+          <img loading="lazy" src="img/contact-location_icon-2.svg" class="image" width="24" height="24" alt="map-icon">
+          <address>г. Минск, ул. Суражская, д. 1Ас</address>
+        </div>
+        <div class="contact__address-item">
+          <img loading="lazy" src="img/contact-location_icon-1.svg" class="image" width="24" height="24" alt="map-icon">
+          <address>г. Минск, ул. Нововиленская, д. 41</address>
+        </div>
+        <div class="contact__address-item">
+          <img loading="lazy" src="img/contact-location_icon-1.svg" class="image" width="24" height="24" alt="map-icon">
+          <address>г. Минск, ул. Кальварийская, д. 7Б ТЦ «Трюм»</address>
+        </div>
+      </div>
+
+      <div class="contact__logo">
+        <picture>
+          <source srcset="img/contact-logo.webp" type="image/webp">
+          <img loading="lazy" src="img/contact-logo.png" class="image" width="266" height="266" alt="logo-duck">
+        </picture>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="container">
+    <div class="footer__logo footer__logo-main">
+      <picture>
+        <source srcset="img/logo-footer.webp" type="image/webp">
+        <img loading="lazy" src="img/logo-footer.png" class="image" width="200" height="50" alt="logo">
+      </picture>
+    </div>
+    <div class="footer__wrapper">
+      <div class="footer__item footer__item-contact">
+        <div class="footer__logo">
+          <picture>
+            <source srcset="img/logo-footer.webp" type="image/webp">
+            <img loading="lazy" src="img/logo-footer.png" class="image" width="200" height="50" alt="logo">
+          </picture>
+        </div>
+        <div class="footer__contact">
+          <div class="footer__contact-address">
+            <img src="img/location-icon.svg" class="image"  width="24" height="24" alt="address">
+            <address>г. Минск, ул. Бобруйская, д, 6 ТЦ «Galileo», Конкорс</address>
+          </div>
+          <div class="footer__contact-phone">
+            <img src="img/phone-icon.svg" class="image"  width="23.95" height="24" alt="phone">
+            <a href="tel:375291234567">+375 29 123 45 67</a>
+          </div>
+          <div class="footer__contact-address">
+            <img src="img/location-icon.svg" class="image"  width="24" height="24" alt="address">
+            <address>г. Минск, ул. Суражская, д. 1А</address>
+          </div>
+          <div class="footer__contact-phone">
+            <img src="img/phone-icon.svg" class="image"  width="23.95" height="24" alt="phone">
+            <a href="tel:375291234567">+375 29 123 45 67</a>
+          </div>
+          <div class="footer__contact-address">
+            <img src="img/location-icon.svg" class="image"  width="24" height="24" alt="address">
+            <address>г. Минск, ул. Нововиленская, д. 41</address>
+          </div>
+          <div class="footer__contact-phone">
+            <img src="img/phone-icon.svg" class="image"  width="23.95" height="24" alt="phone">
+            <a href="tel:375291234567">+375 29 123 45 67</a>
+          </div>
+          <div class="footer__contact-address">
+            <img src="img/location-icon.svg" class="image"  width="24" height="24" alt="address">
+            <address>г. Минск, ул. Кальварийская, д. 7Б ТЦ «Трюм»</address>
+          </div>
+          <div class="footer__contact-phone">
+            <img src="img/phone-icon.svg" class="image"  width="23.95" height="24" alt="phone">
+            <a href="tel:375291234567">+375 29 123 45 67</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__item footer__item-nav">
+        <nav class="nav">
+          <ul class="list-reset nav__list footer__nav">
+            <li class="nav__item"><a href="#" class="nav__link">главная</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">меню</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">акции</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">открыть франшизу</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">оставить жалобу</a></li>
+          </ul>
+        </nav>
+        <div class="footer__item-social">
+          <div class="social footer__social">
+            <a class="social-link" href="#">
+              <img loading="lazy" src="../img/instagram.svg" class="image" width="50" height="50" alt="instagram">
+            </a>
+            <a class="social-link" href="#">
+              <img loading="lazy" src="../img/tiktok.svg" class="image" width="50" height="50" alt="tiktok">
+            </a>
+            <a class="social-link" href="#">
+              <img loading="lazy" src="../img/vk.svg" class="image" width="50" height="50" alt="vk">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__item footer__item--about">
+        <p class="footer__item-conditions--tablet">Условия оплаты и доставки</p>
+        <div class="footer__item-inf">
+          <p>ООО «ХОККАЙДО»</p>
+          <p>Общество с ограниченной ответственностью «ХОККАЙДО»</p>
+          <p>УНП: 193707066</p>
+          <address>220053, РБ, г. Минск, ул. Каховская, д. 17, пом. 221/9</address>
+          <p class="footer__item-conditions">Условия оплаты и доставки</p>
+        </div>
+        <div class="footer__item-developer">Сайт разработан ВТОП3</div>
+      </div>
+
+      <div class="footer__item-social footer__item-social--tablet">
+        <div class="social footer__social">
+          <a class="social-link" href="#">
+            <img loading="lazy" src="../img/instagram.svg" class="image" width="50" height="50" alt="instagram">
+          </a>
+          <a class="social-link" href="#">
+            <img loading="lazy" src="../img/tiktok.svg" class="image" width="50" height="50" alt="tiktok">
+          </a>
+          <a class="social-link" href="#">
+            <img loading="lazy" src="../img/vk.svg" class="image" width="50" height="50" alt="vk">
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer__item-developer footer__item-developer--tablet">Сайт разработан ВТОП3</div>
+  </div>
+</footer>
+
+    <div class="social__fix-wrapper">
+  <div class="social__fix">
+    <a class="social__fix-link" href="#">
+      <img loading="lazy" src="img/instagram-100.svg" class="image" width="100" height="100" alt="instagram">
+    </a>
+    <a class="social__fix-link" href="#">
+      <img loading="lazy" src="img/tiktok-100.svg" class="image" width="100" height="100" alt="tiktok">
+    </a>
+    <a class="social__fix-link" href="#">
+      <img loading="lazy" src="img/vk-100.svg" class="image" width="100" height="100" alt="vk">
+    </a>
+  </div>
+</div>
+
+  </div>
+</body>
+
+</html>
