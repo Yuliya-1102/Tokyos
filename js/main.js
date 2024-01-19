@@ -163,13 +163,20 @@ __webpack_require__.r(__webpack_exports__);
   \*************************************/
 /***/ (() => {
 
+const html = document.querySelectorAll('html');
 document.querySelector('.header__burger').addEventListener('click', function () {
+  html.forEach(item => {
+    item.classList.add('menu-opened');
+  });
   document.querySelector('.header__nav-mobile').classList.add('active');
   document.querySelector('.header__nav-mobile--wrapper').classList.add('active');
 });
 document.querySelector('.header__nav-mobile--close').addEventListener('click', function () {
   document.querySelector('.header__nav-mobile').classList.remove('active');
   document.querySelector('.header__nav-mobile--wrapper').classList.remove('active');
+  html.forEach(item => {
+    item.classList.remove('menu-opened');
+  });
 });
 
 /***/ }),
@@ -273,29 +280,7 @@ const swiperMap = new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]('.map__swip
     clickable: true
   },
   loop: true,
-  speed: 800,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      pagination: false
-    }
-  }
-
-  // pagination: {
-  //   el: '.map__wrapper-img',
-  //   bulletClass: '.map__btn-dot',
-  //   bulletActiveClass: 'active',
-  //   renderBullet: (index, className) => `<div class="${className}">${index + 1}</div>`,
-  //   clickable: true,
-  // },
-
-  // pagination: {
-  //   el: '.swiper-pagination-my',
-  //   clickable: true,
-  //     renderBullet: function (index, className) {
-  //       return '<span class="' + className + '">' + (menu[index]) + '</span>';
-  //     },
-  // },
+  speed: 800
 });
 
 /***/ }),
