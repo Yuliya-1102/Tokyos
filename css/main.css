@@ -1368,7 +1368,7 @@ button {
     margin-top: 84px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .stock {
     padding-top: 40px;
   }
@@ -1544,7 +1544,7 @@ button {
     height: 147px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .franchise {
     padding-top: 39px;
   }
@@ -1699,7 +1699,7 @@ button {
     bottom: -14px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .contact__address-item {
     font-size: 16px;
     line-height: 130%;
@@ -2016,7 +2016,7 @@ button {
     bottom: -9px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .map__item-bg {
     min-height: 140px;
   }
@@ -2127,7 +2127,7 @@ button {
     padding: 50px 0;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 350px) {
   .complaint__main-bg {
     min-height: 80px;
   }
@@ -3119,7 +3119,13 @@ button {
     margin-left: 10px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .menu__navigation-item {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
   .menu__navigation-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
