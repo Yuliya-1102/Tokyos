@@ -22,6 +22,7 @@ Promise.all(/*! import() */[__webpack_require__.e("vendors-node_modules_inputmas
 __webpack_require__.e(/*! import() */ "src_js_components_form_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/form */ "./src/js/components/form.js", 23));
 __webpack_require__.e(/*! import() */ "src_js_components_menu_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/menu */ "./src/js/components/menu.js", 23));
 __webpack_require__.e(/*! import() */ "src_js_components_header_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/header */ "./src/js/components/header.js", 23));
+__webpack_require__.e(/*! import() */ "src_js_components_delivery_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/delivery */ "./src/js/components/delivery.js", 23));
 
 /***/ }),
 

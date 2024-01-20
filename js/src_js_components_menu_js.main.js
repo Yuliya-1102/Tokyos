@@ -49,11 +49,19 @@ const menu = document.querySelector('.menu');
 const menuModal = document.querySelector('.menu__modal');
 menu.addEventListener('click', event => {
   let target = event.target;
+
+  //открытие и закрытие модального окна ЗАКАЗАТЬ
   if (target.classList.contains('menu__cards-btn')) {
     menuModal.classList.add('active');
   }
   if (target.classList.contains('menu__modal-btn')) {
     menuModal.classList.remove('active');
+  }
+
+  // выбор ингридиентов
+  if (target.closest('.menu__cards-icon')) {
+    let parent = event.target.parentNode;
+    parent.classList.toggle('active');
   }
 });
 
