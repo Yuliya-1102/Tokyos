@@ -32,7 +32,7 @@ const rules = [{
   }]
 }];
 const afterForm = () => {
-  console.log('Произошла отправка, тут можно писать любые действия');
+  console.log('Произошла отправка!');
 };
 (0,_functions_validate_forms__WEBPACK_IMPORTED_MODULE_0__.validateForms)('.complaint__form', rules, afterForm);
 

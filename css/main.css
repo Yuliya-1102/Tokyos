@@ -312,6 +312,7 @@ button {
   display: none;
 }
 .header__nav-mobile {
+  display: none;
   position: absolute;
   right: -500px;
   top: 0;
@@ -352,6 +353,7 @@ button {
 
 .header__nav-mobile.active {
   right: 0;
+  display: block;
 }
 
 .header__nav-mobile--wrapper.active {
@@ -1199,6 +1201,9 @@ button {
     font-size: 24px;
     line-height: 130%;
     margin-bottom: 34px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .footer__item-developer--tablet {
     text-align: center;
@@ -2898,6 +2903,9 @@ button {
   }
 }
 @media (max-width: 1045px) {
+  .menu-container {
+    overflow: hidden;
+  }
   .menu__wrapper {
     display: block;
   }

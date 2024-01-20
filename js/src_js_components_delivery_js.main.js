@@ -9,10 +9,12 @@
 const footerModalBtn = document.querySelector('.footer__modal-btn');
 const footerModal = document.querySelector('.footer__modal');
 const itemConditions = document.querySelectorAll('.footer__item-conditions');
-itemConditions.forEach(item => {
-  item.addEventListener('click', () => {
+const pageBodyFooter = document.querySelector('.page__body');
+pageBodyFooter.addEventListener('click', event => {
+  let target = event.target;
+  if (target.classList.contains('footer__item-conditions')) {
     footerModal.classList.add('active');
-  });
+  }
 });
 footerModalBtn.addEventListener('click', () => {
   footerModal.classList.remove('active');
