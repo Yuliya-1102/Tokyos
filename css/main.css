@@ -1064,7 +1064,7 @@ button {
   font-weight: 400;
   line-height: 120%;
   text-align: right;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .footer__item-conditions {
   margin-top: 43px;
@@ -2450,7 +2450,7 @@ button {
   margin-bottom: 41px;
 }
 .menu-container {
-  overflow: visible !important;
+  overflow: visible;
 }
 .menu__container {
   padding-left: 0px;
