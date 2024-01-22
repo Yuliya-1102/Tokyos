@@ -17,10 +17,13 @@ headerNavItem.forEach(item => {
 
 //текущая ссылка меню выделить
 headerNavLink.forEach(link => {
-  let currentUrl = window.location.pathname.slice(1);
-  if (link.getAttribute("href") === currentUrl) {
+  let currentUrl = window.location.pathname;
+  if (currentUrl.indexOf(link.getAttribute("href")) != -1) {
     link.classList.add("active");
   }
+  // if (link.getAttribute("href") === currentUrl){
+  //   link.classList.add("active");
+  // }
 });
 
 /***/ })
