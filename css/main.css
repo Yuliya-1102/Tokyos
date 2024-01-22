@@ -755,6 +755,16 @@ button {
 .dish__item {
   position: relative;
   border-radius: 0.9375rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.dish__item:hover {
+  -webkit-box-shadow: -4px 4px 4px 0px rgba(255, 255, 255, 0.25);
+  box-shadow: -4px 4px 4px 0px rgba(255, 255, 255, 0.25);
+}
+.dish__item:active {
+  -webkit-box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.5) inset;
 }
 .dish__item-big {
   -ms-flex-preferred-size: 54.0625rem;
@@ -2580,7 +2590,13 @@ button {
 }
 .menu__cards-item picture img {
   height: 290px;
-  border-radius: 15px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.menu__cards-item:hover .menu__cards-img img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .menu__cards-content {
   padding: 0px 20px 20px 20px;
@@ -2697,6 +2713,10 @@ button {
 .menu__cards-btn:active {
   -webkit-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
   box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+.menu__cards-img {
+  overflow: hidden;
+  border-radius: 15px 15px 0 0;
 }
 
 .menu__item-offer {
@@ -2892,12 +2912,12 @@ button {
   color: #fff;
 }
 .menu__modal-btn:hover {
-  -webkit-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: -3px 3px 4px 0px rgba(255, 255, 255, 0.4);
+  box-shadow: -3px 3px 4px 0px rgba(255, 255, 255, 0.4);
 }
 .menu__modal-btn:active {
-  -webkit-box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
-  box-shadow: -2px 2px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  -webkit-box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: -3px 3px 4px 0px rgba(0, 0, 0, 0.25) inset;
 }
 .menu__offer-icon--tablet {
   display: none;
