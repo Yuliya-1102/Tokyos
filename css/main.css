@@ -2347,7 +2347,7 @@ button {
 }
 .form__item-label--radio {
   position: relative;
-  padding-left: 22px;
+  padding-left: 26px;
   font-family: "Alegreya Sans";
   font-size: 24px;
   line-height: 130%;
@@ -2445,7 +2445,7 @@ button {
     height: 8px;
   }
   .form__item-label--radio {
-    padding-left: 15px;
+    padding-left: 15px !important;
   }
   .form__item-label.form__item-label:not(:last-child) {
     margin-bottom: 14px;

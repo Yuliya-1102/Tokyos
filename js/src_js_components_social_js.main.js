@@ -21,7 +21,6 @@ if (window.matchMedia("(min-width: 1010px)").matches) {
 } else {
   socialFixWrapper.classList.add('active');
   window.addEventListener('scroll', function () {
-    console.log(window.scrollY);
     if (window.scrollY > pageHeight - 1100) {
       socialFixWrapper.classList.add('desactive');
     } else {
