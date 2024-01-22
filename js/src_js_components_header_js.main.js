@@ -7,16 +7,20 @@
 /***/ (() => {
 
 const headerNavItem = document.querySelectorAll('.header__nav-item');
+const headerNavLink = document.querySelectorAll('.header__nav-item a');
 headerNavItem.forEach(item => {
   item.addEventListener('click', function (e) {
-    let parent = e.target.parentNode;
-    headerNavItem.forEach(item => {
-      item.classList.remove('active');
-      parent.classList.add('active');
-    });
     document.querySelector('.header__nav-mobile').classList.remove('active');
     document.querySelector('.header__nav-mobile--wrapper').classList.remove('active');
   });
+});
+
+//текущая ссылка меню выделить
+headerNavLink.forEach(link => {
+  let currentUrl = window.location.pathname.slice(1);
+  if (link.getAttribute("href") === currentUrl) {
+    link.classList.add("active");
+  }
 });
 
 /***/ })

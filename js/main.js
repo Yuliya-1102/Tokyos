@@ -24,6 +24,7 @@ __webpack_require__.e(/*! import() */ "src_js_components_form_js").then(__webpac
 __webpack_require__.e(/*! import() */ "src_js_components_menu_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/menu */ "./src/js/components/menu.js", 23));
 __webpack_require__.e(/*! import() */ "src_js_components_header_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/header */ "./src/js/components/header.js", 23));
 __webpack_require__.e(/*! import() */ "src_js_components_delivery_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/delivery */ "./src/js/components/delivery.js", 23));
+__webpack_require__.e(/*! import() */ "src_js_components_social_js").then(__webpack_require__.t.bind(__webpack_require__, /*! ./components/social */ "./src/js/components/social.js", 23));
 
 /***/ }),
 
@@ -189,9 +190,10 @@ document.querySelector('.header__nav-mobile--close').addEventListener('click', f
   \**********************************/
 /***/ (() => {
 
-let btnsHandler = document.querySelectorAll('.map__btn-dot');
-let btnsHandlerImg = document.querySelectorAll('.map__btn-dot img');
-let sliderField = document.querySelectorAll('.map__slider-item');
+const btnsHandler = document.querySelectorAll('.map__btn-dot');
+const btnsHandlerImg = document.querySelectorAll('.map__btn-dot img');
+const sliderField = document.querySelectorAll('.map__slider-item');
+const contactAddressItem = document.querySelectorAll('.contact__address-item img');
 btnsHandler.forEach(item => {
   item.addEventListener('click', function (event) {
     let parent = event.target.parentNode;
@@ -203,6 +205,13 @@ btnsHandler.forEach(item => {
     sliderField.forEach(item => {
       item.classList.remove('active');
       let dataField = item.dataset.tabsField;
+      contactAddressItem.forEach(img => {
+        img.src = 'img/contact-location_icon-1.svg';
+        let dataIcon = img.dataset.tabsIcon;
+        if (dataHandler === dataIcon) {
+          img.src = 'img/contact-location_icon-2.svg';
+        }
+      });
       if (dataHandler === dataField) {
         item.classList.add('active');
       }

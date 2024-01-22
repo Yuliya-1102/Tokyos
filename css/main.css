@@ -400,10 +400,10 @@ button {
   text-transform: uppercase;
   text-align: center;
 }
-.nav .header__nav-item:hover {
+.nav .nav__link.active {
   position: relative;
 }
-.nav .header__nav-item:hover::after {
+.nav .nav__link.active::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -676,7 +676,7 @@ button {
     min-height: 200px;
   }
   .slider__item-text {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 @media (max-width: 450px) {
@@ -1255,10 +1255,17 @@ button {
   }
 }
 .social__fix-wrapper {
+  display: none;
   position: fixed;
   right: 64px;
-  bottom: 64px;
+  top: 40%;
   z-index: 800;
+}
+.social__fix-wrapper.active {
+  display: block;
+}
+.social__fix-wrapper.desactive {
+  display: none;
 }
 .social__fix {
   display: -webkit-box;
@@ -1300,11 +1307,13 @@ button {
   }
   .social__fix-wrapper {
     right: 10px;
+    top: 20%;
+    display: block;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 320px) {
   .social__fix-wrapper {
-    display: none;
+    display: none !important;
   }
 }
 .stock {
@@ -1524,6 +1533,9 @@ button {
   -webkit-filter: blur(10px);
   filter: blur(10px);
 }
+.franchise__content-imail {
+  border-bottom: 1px solid #fff;
+}
 
 @media (max-width: 1010px) {
   .franchise__main-bg {
@@ -1720,6 +1732,7 @@ button {
 
 @media (max-width: 1010px) {
   .contact__address-item {
+    font-weight: 400;
     font-size: 20px;
     line-height: 120%;
   }
@@ -2232,7 +2245,6 @@ button {
   margin-bottom: 20px;
 }
 .form__item-label.form__item-label:not(:last-child) {
-  display: block;
   margin-bottom: 22px;
 }
 .form__item-input {
@@ -2322,7 +2334,7 @@ button {
 }
 .form__thanks-text {
   font-family: "Alegreya Sans";
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: 130%; /* 31.2px */
@@ -2335,10 +2347,16 @@ button {
 }
 .form__item-label--radio {
   position: relative;
-  padding-left: 20px;
+  padding-left: 26px;
   font-family: "Alegreya Sans";
   font-size: 24px;
   line-height: 130%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .form__item {
@@ -2442,6 +2460,10 @@ button {
     min-height: 336px;
   }
   .just-validate-error-label {
+    font-size: 14px;
+  }
+  .form__item-labe--contact {
+    font-weight: 300;
     font-size: 14px;
   }
 }
@@ -3044,6 +3066,20 @@ button {
     width: fit-content;
   }
 }
+@media (max-width: 1045px) {
+  .menu__offer-bg:first-child {
+    background: url("../img/menu-bg-1-1.png") no-repeat center;
+    background-size: cover;
+  }
+  .menu__offer-bg:nth-child(2) {
+    background: url("../img/menu-bg-2-2.png") no-repeat center;
+    background-size: cover;
+  }
+  .menu__offer-bg:last-child {
+    background: url("../img/menu-bg-3-3.png") no-repeat center;
+    background-size: cover;
+  }
+}
 @media (max-width: 762px) {
   .menu__navigation-list {
     gap: 25px;
@@ -3253,7 +3289,8 @@ button {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  max-width: 768px;
+  max-width: 1312px;
+  width: 100%;
   border-radius: 15px;
   background: var(--accent-color);
   text-align: center;
@@ -3266,28 +3303,30 @@ button {
 }
 .footer__modal-wrapper {
   position: relative;
-  padding: 58px 20px 60px;
+  padding: 50px 82px;
 }
 .footer__modal-title {
-  font-size: 20px;
-  line-height: 140%; /* 28px */
-  letter-spacing: -1px;
-  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110%; /* 44px */
+  letter-spacing: -4px;
   margin-bottom: 30px;
 }
 .footer__modal p {
   font-family: "Alegreya Sans";
-  font-size: 16px;
-  line-height: 130%;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 130%; /* 31.2px */
 }
 .footer__modal-subtitle {
   font-family: "Alegreya Sans";
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: 700 !important;
   line-height: 130%; /* 20.8px */
 }
 .footer__modal-delivery {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .footer__modal-btn {
   position: absolute;
@@ -3296,10 +3335,60 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1010px) {
   .footer__modal {
-    max-width: 100%;
-    width: 90%;
+    max-width: 768px;
+  }
+  .footer__modal-wrapper {
+    padding: 58px 82px;
+  }
+  .footer__modal-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 28px */
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .footer__modal p {
+    font-family: "Alegreya Sans";
+    font-size: 16px;
+    line-height: 130%;
+  }
+  .footer__modal-subtitle {
+    font-size: 16px;
+  }
+  .footer__modal-delivery {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 350px) {
+  .footer__modal {
+    max-width: 320px;
+  }
+  .footer__modal-wrapper {
+    padding: 40px 10px;
+  }
+  .footer__modal-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: -0.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .footer__modal p {
+    font-family: "Alegreya Sans";
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .footer__modal-subtitle {
+    font-size: 14px;
+  }
+  .footer__modal-delivery {
+    margin-bottom: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */
