@@ -10,7 +10,6 @@ const socialFixWrapper = document.querySelector('.social__fix-wrapper');
 const pageHeight = document.documentElement.scrollHeight;
 if (window.matchMedia("(min-width: 1010px)").matches) {
   window.addEventListener('scroll', function () {
-    console.log(window.scrollY);
     if (window.scrollY > 150) {
       socialFixWrapper.classList.add('active');
     }

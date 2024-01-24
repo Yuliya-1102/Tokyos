@@ -205,6 +205,9 @@ btnsHandler.forEach(item => {
     sliderField.forEach(item => {
       item.classList.remove('active');
       let dataField = item.dataset.tabsField;
+      if (dataHandler === dataField) {
+        item.classList.add('active');
+      }
       contactAddressItem.forEach(img => {
         img.src = 'img/contact-location_icon-1.svg';
         let dataIcon = img.dataset.tabsIcon;
@@ -212,25 +215,45 @@ btnsHandler.forEach(item => {
           img.src = 'img/contact-location_icon-2.svg';
         }
       });
-      if (dataHandler === dataField) {
-        item.classList.add('active');
-      }
     });
   });
 });
-
-// var menu = ['Slide 1', 'Slide 2', 'Slide 3']
-// var mySwiper = new Swiper ('.swiper-container', {
-//     // If we need pagination
-//     pagination: {
-//       el: '.swiper-pagination',
-// 			clickable: true,
-//         renderBullet: function (index, className) {
-//           return '<span class="' + className + '">' + (menu[index]) + '</span>';
-//         },
-//     },
-
-//   })
+function addMap() {
+  const contactWrapper = document.querySelector('.contact__wrapper');
+  contactWrapper.addEventListener('click', event => {
+    let target = event.target;
+    if (target.closest('.contact__address-item')) {
+      let parent = target.parentNode;
+      let dataIcon = parent.dataset.tabsIcon;
+      contactAddressItem.forEach(img => {
+        img.src = 'img/contact-location_icon-1.svg';
+        let dataIconImg = img.dataset.tabsIcon;
+        if (dataIconImg === dataIcon) {
+          img.src = 'img/contact-location_icon-2.svg';
+        }
+      });
+      sliderField.forEach(item => {
+        item.classList.remove('active');
+        let dataField = item.dataset.tabsField;
+        if (dataIcon === dataField) {
+          item.classList.add('active');
+        }
+      });
+      btnsHandlerImg.forEach(item => {
+        let parent = item.parentNode;
+        item.src = 'img/map-loc.svg';
+        let dataHandler = parent.dataset.tabsHandler;
+        if (dataIcon === dataHandler) {
+          item.src = 'img/contact-loc-full.svg';
+        }
+      });
+    }
+  });
+}
+let currentUrl = window.location.pathname;
+if (currentUrl.indexOf("index-contact.html") != -1) {
+  addMap();
+}
 
 /***/ }),
 
